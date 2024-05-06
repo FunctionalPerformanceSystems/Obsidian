@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://www.cise.ufl.edu/research/SurfLab/bview/#file-format -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+		<title>BezierView</title>
+		<meta name="description" content="A program to view Berntein-Bezier surfaces">
+		<meta name="author" content="SurfLab">
+		<link rel="shortcut icon" href="./BezierView_files/favicon.ico">
+
+		<!-- stylesheets were downloaded from http://bootswatch.com/readable/ -->
+		<link rel="stylesheet" href="./BezierView_files/bootstrap.min.css">
+		<!--		<link rel="stylesheet" href="css/bootswatch.min.css">-->
+
+
+		<style>
+		.abstract {
+			display: none;
+		}
+		.paper-title {
+			font-weight: bold;
+			font-style: italic;
+		}
+		a.pdf {
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			background-image: url("img/pdf.gif");
+		}
+		.navbar-fixed-top-spacer {
+		    display: block;
+		    height: 50px;
+		}
+		img.inline {
+			float: right;
+			padding: .2em;
+			max-width: 50%;
+		}
+		.navbar-brand img {
+			width: 2em;
+			height: 2em;
+			display: inline-block;
+			margin-right: 0.5em;
+		}
+		img.scrshot {
+			padding: .2em;
+			margin: 1em auto;
+			max-width: 100%;
+		}
+
+		.grid-container {
+		    border: 1px solid #fff;
+		    padding: 5px;
+		}
+
+		.grid-child {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		    width: 33%;
+			height: 300px;
+		    float: left;
+		}
+		</style>
+
+	</head>
+	<body style="">
+		<div class="navbar navbar-default navbar-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="https://www.cise.ufl.edu/research/SurfLab/bview/"><img src="./BezierView_files/favicon.ico"> BezierView</a>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<!--
+						<li><a href="#download">Download</a></li>
+						-->
+						<!--li><a href="#screenshots">Screenshots</a></li-->
+						<li><a href="https://www.cise.ufl.edu/research/SurfLab/bview/#file-format">.bv File Format</a></li>
+						<!--
+						<li><a href="http://bitbucket.org/surflab/bezierview" target="_blank"><img width="24" height="24" src="https://bitbucket.org/favicon.ico"> Source code</a></li>
+						-->
+					<!--/ul>
+					<ul class="nav navbar-nav navbar-right"-->
+						<li><a href="https://www.cise.ufl.edu/research/SurfLab/bview/webgl/" target="_blank">WebGL</a></li>
+						<!--
+						<li><a href="https://www.cise.ufl.edu/research/SurfLab/bview/webgl3_new_3/" target="_blank">WebGL</a></li>
+-->
+
+						<!--li>
+							<a>
+								<select id="webgl" onChange="window.location.href=this.value">
+								  <option value="Old Versions">Old Versions</option>
+								  <option value="https://www.cise.ufl.edu/research/SurfLab/bview/webgl/">WebGL</option>
+								  <option value="https://www.cise.ufl.edu/research/SurfLab/bview/webgl2/">WebGL 2.0</option>
+								  <option value="https://www.cise.ufl.edu/research/SurfLab/bview/webgl3/">WebGL 3.0</option>
+								</select>
+							</a>
+						</li-->
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+<p>
+    <img class="inline" src="./BezierView_files/tpt_grp.jpg">
+<a href="https://www.cise.ufl.edu/research/SurfLab/bview/webgl3_new_2/" target="_blank">BezierView</a>
+(short bview) is a light weight viewer that renders Bezier patches,
+rational bezier patches and polygonal meshes.
+It provides a simple tool to analyse surfaces based on curvature plots,
+curvature needle plots, and highlight line plots.
+Currently, the WebGL version is recommended but also binaries
+and source coode are available.
+
+</p>
+<h3 id="!features">Features</h3>
+<ul><li>Tensor product Bezier patches
+</li><li>Tensor product rational patches
+</li><li>Triangle Bezier patches
+</li><li>Polyhedron
+</li><li>PN triangles, PN quadrilateral patches
+</li><li>Gaussian/Mean/Max/Min curvature plot (set min: max: in file IN.crvBounds)
+</li><li>Plane clipping
+</li><li>Position save/load
+</li><li>Object groups
+   different colors can be assigned to different groups
+</li><li>Environment mapping
+  (Image file: room.bmp)
+</li></ul>
+<!--h2>Screenshots</h2-->
+<h5>Curvature</h5>
+<img class="scrshot" src="./BezierView_files/hex_curv.jpg" width="250" height="250">
+<img class="scrshot" src="./BezierView_files/hex_needle.jpg" width="250" height="250">
+<h5>Clipping</h5>
+<img class="scrshot" src="./BezierView_files/twistcube.jpg" width="250" height="250">
+<img class="scrshot" src="./BezierView_files/clipping.jpg" width="250" height="250">
+<h5>Patch Grouping</h5>
+<img class="scrshot" src="./BezierView_files/teapot.jpg" width="100" height="100">
+<img class="scrshot" src="./BezierView_files/tpt_grp.jpg" width="200" height="250">
+<img class="scrshot" src="./BezierView_files/patch_poly.jpg" width="200" height="250">
+
+<h2 id="!example-filesin-data">Example Data
+   <!--
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/"
+   target="_blank"> data </a>
+   <a href="https://bitbucket.org/surflab/bezierview/src/tip/data/">
+   -->
+</h2>
+<ul><li>patches
+<ul><li>tensor-product (quad) patches: <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/hex.bv" target="_blank"> hex.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/hex2.bv" target="_blank"> hex2.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tp2x1.bv" target="_blank"> tp2x1.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tp3x3.bv" target="_blank"> tp3x3.bv </a>
+   </code>
+</li><li>rational quad patches: <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/rat1.bv" target="_blank"> rat1.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tor.bv" target="_blank"> tor.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/sphere.bv" target="_blank"> sphere.bv </a>
+   </code>
+</li><li>triangular patches: <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tri1.bv" target="_blank"> tri1.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tri2.bv" target="_blank"> tri2.bv </a>
+   </code>
+</li><li>rational triangular patches: <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/air2.bv" target="_blank"> air2.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tet2.bv" target="_blank"> tet2.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/mix2.bv" target="_blank"> mix2.bv </a>
+   </code>
+</li></ul></li><li>utal teapot <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/teapot.bv" target="_blank"> teapot.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/teapot2.bv" target="_blank"> teapot2.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tpt_grp.bv" target="_blank"> tpt_grp.bv </a>
+   </code>
+</li><li>polyhedron data <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/cube.bv" target="_blank"> cube.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/closedcone.bv" target="_blank"> closedcone.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/hand.bv" target="_blank"> hand.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tetra.bv" target="_blank"> tetra.bv </a>
+   </code>
+</li><li>mixed data <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tp_poly.bv" target="_blank"> tp_poly.bv </a>
+   </code>
+</li><li>grouped data <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tpt_grp.bv" target="_blank"> tpt_grp.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/tridat.cube" target="_blank"> tridat.cube </a>
+   </code>
+</li><li>g2 surfaces <code>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/plm.icosa.260" target="_blank"> plm.icosa.260 </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/plm.tw.700" target="_blank"> plm.tw.700 </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/plm.oct.100" target="_blank"> plm.oct.100 </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/cubeg2.bv" target="_blank"> cubeg2.bv </a>
+   <a href="https://www.cise.ufl.edu/research/SurfLab/bview/data/twg2.bv" target="_blank"> twg2.bv </a>
+   </code>
+   </li></ul>
+<a name="file-format"></a>
+<h2 id="!file-format">File format</h2>
+<p> A .bv file consists of segments. Each segment
+has a patch header followed by the patch data. The header starts with the </p>
+<h4 id="!patch-type">Patch type:</h4>
+<ul><li>1:    polyhedron
+</li><li>3:    triangular patch
+</li><li>4:    tensor-product patch with same degree in both directions.
+</li><li>5:    general tensor-product patch
+</li><li>8:    rational Bezier tensor-product
+</li><li>9:    PN triangle patches
+</li><li>10:    PN quads patches
+</li><li>11:   rational triangular patches
+</li></ul>
+<!--h3 id="!patch-data">Patch Data:</h3-->
+<h4 id="!polyhedron">Polyhedron</h4>
+<p>essentially .obj format</p>
+<pre>1
+Vnum Fnum
+v0x v0y v0z
+v1x v1y v1z
+..
+v(n-1)x v(n-1)y v(n-1)z
+3 f1v1 f1v2 f1v3   (OR: 4 f1v1 f1v2 f1v3 f1v4)
+...
+3 fmv1 fmv2 fmv3    (vertices are indeexed 0..n-1, not 1..n])
+</pre>
+Note:
+User can use <a href="https://bitbucket.org/surflab/obj2bv/src/master/">obj2bv</a>
+to convert .obj into .bv file.
+<br>
+(obj2bv also shows how to display control polygon and BB-patch in BView at the same time)
+
+
+
+<h4 id="!tensor-product-patches">Tensor-product (4-sided) patches</h4>
+<p> header one of:</p>
+<pre>5
+deg_u deg_v
+</pre>
+
+<div class="grid-container">
+	<div class="grid-child">
+		<img class="scrshot" src="./BezierView_files/deg2x3patch.png" width="300" height="250">
+	</div>
+	<div class="grid-child">
+	<div style="height:200px;width:300px;overflow:auto;">
+		<pre>Group 1 deg2x3
+5
+2 3
+-1.5 1.0 0.0
+-0.5 1.0 0.0
+0.5 1.0 0.0
+1.5 1.0 0.0
+-1.5 0.0 0.0
+-0.5 0.0 0.5
+0.5 0.0 0.5
+1.5 0.0 0.0
+-1.5 -1.0 0.0
+-0.5 -1.0 0.0
+0.5 -1.0 0.0
+1.5 -1.0 0.0
+		</pre>
+	</div>
+	</div>
+	<div class="grid-child">
+		(Example of deg_u = 2 &amp; deg_v = 3 patch)
+	</div>
+</div>
+
+<hr style="clear:both;visibility: hidden;">
+
+or when deg = deg_u = deg_v
+<pre>4
+deg
+</pre>
+
+<div class="grid-container">
+	<div class="grid-child">
+		<img class="scrshot" src="./BezierView_files/deg3x3patch.png" width="300" height="300">
+	</div>
+	<div class="grid-child">
+	<div style="height:200px;width:300px;overflow:auto;">
+		<pre>Group 0 Bi-3
+5
+3 3
+-1.5 1.5 0.0
+-0.5 1.5 0.0
+0.5 1.5 0.0
+1.5 1.5 0.0
+-1.5 0.5 0.0
+-0.5 0.5 0.5
+0.5 0.5 0.5
+1.5 0.5 0.0
+-1.5 -0.5 0.0
+-0.5 -0.5 0.5
+0.5 -0.5 0.5
+1.5 -0.5 0.0
+-1.5 -1.5 0.0
+-0.5 -1.5 0.0
+0.5 -1.5 0.0
+1.5 -1.5 0.0
+		</pre>
+	</div>
+	</div>
+	<div class="grid-child">
+		(Example of deg = deg_u = deg_v = 3 patch)
+	</div>
+</div>
+
+<hr style="clear:both;visibility: hidden;">
+
+or
+<pre>8
+deg_u deg_v
+</pre>
+<p>The patch data are x y z values of the control points
+in row-major order. If rows= deg_u+1 =du1 and columns= deg_v+1 = dv1:</p>
+<p>
+p(1,1) &nbsp; p(1,2) &nbsp;     ....&nbsp; p(1,dv1)
+</p> <p>
+p(2,1) &nbsp; p(2,2) &nbsp;   ....&nbsp; p(2,dv1)
+</p> <p>
+..    &nbsp;    ..  &nbsp;     .... &nbsp;   ..
+</p> <p>
+p(du1,1) &nbsp; p(du1,2)&nbsp; .. &nbsp;  p(du1,dv1)
+</p>
+and p has coordinates x,y,z then
+<pre>x(1,1) y(1,1) z(1,1)
+x(1,2) y(1,2) z(1,2)
+ :
+x(du1,dv1) y(du1,dv1) z(du1,dv1)
+</pre>
+For example a tensor-product patch of degree 1 by 2 has the header
+<pre>5
+1 2
+-1 -1 0
+ 0 -1 0
+ 1 -1 0
+-1  1 0
+ 0  1 0
+ 1  1 0
+</pre>
+
+<h4 id="!triangle-bezier-patches">Total-degree (3-sided) Bezier patches</h4>
+<p>header:</p>
+<pre>3
+deg
+</pre>
+<p>
+followed by (deg+2)*(deg+1)/2 control points  with
+row-ascending ordering. For a cubic patch</p>
+<p>
+&nbsp; &nbsp;&nbsp;9
+</p> <p>
+&nbsp;&nbsp;  7&nbsp; 8
+</p> <p>
+&nbsp; 4&nbsp; 5&nbsp; 6
+</p> <p>
+0 &nbsp; 1 &nbsp; 2 &nbsp; 3
+</p>
+<p>the coordinates x,y,z of the patch data are </p>
+<pre>x(0) y(0) z(0)
+x(1) y(1) z(1)
+  :
+x(9) y(9) z(9)
+</pre>
+<h4 id="!pn-triangle-patches">PN triangle patches</h4>
+<p>header:</p>
+<pre>9
+deg Ndeg
+</pre>
+<p>control points as 3-sided patch followed by normals as 3-sided patch.</p>
+<h4 id="!pn-quads">PN quads</h4>
+<p>header:</p>
+<pre>10
+degu degv Ndegu Ndegv
+</pre>
+<p>then the control points; then the normals arranged at the same order</p>
+
+<h2 id="!license">License</h2>
+<p>Copyright (C) 2015 SurfLab, University of Florida.</p>
+<p>This program is free for educational/research purpose.
+You will need to gain permissions from authors before you
+can use this program or any part of the source code for
+commercial usage.</p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY.</p>
+<p>Author(s):</p>
+<ul>
+<li>Jorg Peters
+</li><li>Xiaobin Wu
+</li><li> Michael Malkiewicz, Param Gupta (webGL)
+</li>
+</ul>
+
+<!--
+<a name="download"></a><h3 id="!download">Downloads</h3>
+<p>Binaries:</p>
+<p>v2.12.2:</p>
+<ul>
+<li>Ubuntu 16.04 64-bit binary <a href="https://bitbucket.org/surflab/bezierview/downloads/bview-2.12.2-x86_64-ubuntu">bview-2.12.2-x86_64-ubuntu</a></li>
+<li>Windows 64 bit: <a href="https://bitbucket.org/surflab/bezierview/downloads/bview-2.12.2-x86_64-windows.exe">bview-2.12.2-x86_64-windows.exe</a></li>
+</ul>
+<p>v2.12.1:</p>
+<ul>
+<li>Ubuntu 14.04 64-bit binary <a href="https://bitbucket.org/surflab/bezierview/downloads/bview-2.12.1-x86_64-ubuntu">bview-2.12.1-x86_64-ubuntu</a></li>
+<li>Windows 64 bit: <a href="https://bitbucket.org/surflab/bezierview/downloads/bview-2.12.0.4-x86_64.exe">bview-2.12.0.4-x86_64.exe</a></li>
+</ul>
+<p>Source code as tar.gz: <a href="https://bitbucket.org/surflab/bezierview/get/tip.tar.gz">surflab-bezierview-tip.tar.gz</a></p>
+<p>Source code from Mercurial repository</p>
+<pre>
+hg clone https://bitbucket.org/surflab/bezierview
+</pre>
+</p>
+<h3 id="!build">Build</h3>
+<p>Prerequisites:</p>
+<ul><li><a href="http://download.qt.io/">Qt development package</a></li>
+<li><a href="http://www.qt.io/download-open-source/#section-6">QtCreator</a> (optional)
+</li></ul>
+<h4 id="!option-1-qtcreator">Option 1: QtCreator</h4>
+<ul><li>Open QtCreator (<code>/usr/bin/qtcreator</code>)
+</li><li>Open BezierView.pro by using "File -&gt; Open File or Project..."
+</li><li>Accept the default configuration and hit "Configure Project"
+</li><li>Run Qmake from "Build -&gt; Run QMake"
+</li><li>Build the project "Build -&gt; Build All"
+</li><li>Run BezierView from "Build -&gt; Run"
+</li></ul>
+<h4 id="!option-2-qmake">Option 2: QMake</h4>
+<pre>qmake BezierView.pro
+make
+./bview
+</pre>
+<a name="screenshots" ></a>
+<i>
+<a href="bview-2.11c.html">BezierView 2.11c (Xiaobin's version)</a>: Old version of the website with
+information about old version of BezierView.
+</i>
+-->
+
+		</div>
+
+		<script src="./BezierView_files/jquery-1.10.2.min.js"></script>
+		<script src="./BezierView_files/bootstrap.min.js"></script>
+
+	
+
+
+
+
+
+</body></html>
