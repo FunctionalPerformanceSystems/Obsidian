@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh-complete.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-build.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-configure.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-download.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-install.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-mkdir.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-patch.rule"
+		},
+		{
+			"file" : "/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"OpenMesh"
+		],
+		"name" : "OpenMesh"
+	}
+}

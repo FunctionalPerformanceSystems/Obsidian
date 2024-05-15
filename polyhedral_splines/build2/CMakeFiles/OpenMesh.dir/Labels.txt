@@ -1,0 +1,13 @@
+# Target labels
+ OpenMesh
+# Source files and their labels
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh-complete.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-build.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-configure.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-download.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-install.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-mkdir.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-patch.rule
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/Source/External/OpenMesh/src/OpenMesh-stamp/OpenMesh-update.rule

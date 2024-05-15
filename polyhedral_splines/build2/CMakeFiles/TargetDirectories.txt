@@ -1,0 +1,4 @@
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/OpenMesh.dir
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/PolyhedralSplines.dir
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/edit_cache.dir
+/Users/nborodin/Documents/Git/Notes/polyhedral_splines/build2/CMakeFiles/rebuild_cache.dir

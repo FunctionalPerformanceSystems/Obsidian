@@ -6,7 +6,8 @@
 $$
 x(u,v):=\sum_{i=0}^{d_1} \sum_{j=0}^{d_2} \mathbf{b}_{ij} b_{i}^{d_1} (u) b_{j}^{d_2} (v), \quad (u, v) \in [0..1]^2
 $$
-где $b_{k}^{d}:=$
+где $b_{k}^{d}:= \frac{n!}{k! (n-k)!} (1-t)^{d-k}t^k$ и $\in \real$
+
 ![[Pasted image 20240506193945.png]]
 # [[user_manual.pdf|Алгоритм на C++]]
 ---
