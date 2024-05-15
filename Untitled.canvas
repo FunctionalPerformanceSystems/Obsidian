@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"c3e75e021bc90b54","type":"file","file":"Notes/Алгоритмы Сглаживания.md","x":560,"y":-640,"width":700,"height":680},
+		{"id":"699901881ba10748","type":"file","file":"Notes/MicroStructPy - Microstructure Mesh Generation in Python.md","x":-1920,"y":300,"width":640,"height":560},
+		{"id":"d074eac96facbd85","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/foam.html","x":-810,"y":840,"width":690,"height":581},
+		{"id":"4797bf2733727487","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/from_image.html","x":-2219,"y":1151,"width":939,"height":689},
+		{"id":"60095b25c9759fed","type":"link","url":"https://demonstrations.wolfram.com/BSplineCurvesFromVoronoiPolygonVertices/#popup1","x":220,"y":300,"width":540,"height":680},
+		{"id":"adc7911584527043","type":"file","file":"Notes/Команды Neper.md","x":-1634,"y":-1550,"width":400,"height":400},
+		{"id":"426611dfa7c397f2","type":"file","file":"Notes/Алгоритм генерации зерна.md","x":-1434,"y":-640,"width":674,"height":680},
+		{"id":"fda57375042bfab5","type":"file","file":"Notes/Межзёренное Расстояние.md","x":-440,"y":-640,"width":660,"height":680},
+		{"id":"f7326382b2e5e33d","type":"file","file":"Notes/OFF3D.md","x":-600,"y":1960,"width":400,"height":400},
+		{"id":"a4d6de8ef2f453e0","type":"file","file":"Notes/Experiment - Cyclic Loading.md","x":1920,"y":-640,"width":600,"height":680},
+		{"id":"34a9eb4a65e38252","x":-2380,"y":-590,"width":519,"height":580,"type":"file","file":"Notes/Реализация на С++.md"},
+		{"id":"cbee83ee337a62fd","x":-3280,"y":-579,"width":596,"height":558,"type":"file","file":"Notes/PDF/VORO++.pdf"}
+	],
+	"edges":[
+		{"id":"0b65a42303a45354","fromNode":"fda57375042bfab5","fromSide":"right","toNode":"c3e75e021bc90b54","toSide":"left"},
+		{"id":"44e6cea883c4f3ac","fromNode":"426611dfa7c397f2","fromSide":"right","toNode":"fda57375042bfab5","toSide":"left"},
+		{"id":"78ae6cd95b018068","fromNode":"426611dfa7c397f2","fromSide":"bottom","toNode":"699901881ba10748","toSide":"top"},
+		{"id":"45ec0034b8a87f34","fromNode":"699901881ba10748","fromSide":"right","toNode":"d074eac96facbd85","toSide":"left","label":"Другой способ создания\nмежзеренных расстояний"},
+		{"id":"5f4e05257335d167","fromNode":"699901881ba10748","fromSide":"bottom","toNode":"4797bf2733727487","toSide":"top"},
+		{"id":"36a5324aedf94bd2","fromNode":"c3e75e021bc90b54","fromSide":"bottom","toNode":"60095b25c9759fed","toSide":"top","label":"Сплайны"},
+		{"id":"0a866087249bb7b3","fromNode":"426611dfa7c397f2","fromSide":"top","toNode":"adc7911584527043","toSide":"bottom","label":"Neper"},
+		{"id":"ef258b528cad7638","fromNode":"4797bf2733727487","fromSide":"right","toNode":"f7326382b2e5e33d","toSide":"left","label":"Альтернатива для 3D изображений"},
+		{"id":"d4974c8384606cc8","fromNode":"c3e75e021bc90b54","fromSide":"right","toNode":"a4d6de8ef2f453e0","toSide":"left"},
+		{"id":"22ac094098c071ef","fromNode":"426611dfa7c397f2","fromSide":"left","toNode":"34a9eb4a65e38252","toSide":"right"},
+		{"id":"f25b6c88c0d24e71","fromNode":"34a9eb4a65e38252","fromSide":"left","toNode":"cbee83ee337a62fd","toSide":"right"}
+	]
+}
