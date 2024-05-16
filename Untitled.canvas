@@ -4,7 +4,6 @@
 		{"id":"699901881ba10748","type":"file","file":"Notes/MicroStructPy - Microstructure Mesh Generation in Python.md","x":-1920,"y":300,"width":640,"height":560},
 		{"id":"d074eac96facbd85","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/foam.html","x":-810,"y":840,"width":690,"height":581},
 		{"id":"4797bf2733727487","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/from_image.html","x":-2219,"y":1151,"width":939,"height":689},
-		{"id":"adc7911584527043","type":"file","file":"Notes/Команды Neper.md","x":-1634,"y":-1550,"width":674,"height":570},
 		{"id":"426611dfa7c397f2","type":"file","file":"Notes/Алгоритм генерации зерна.md","x":-1434,"y":-640,"width":674,"height":680},
 		{"id":"fda57375042bfab5","type":"file","file":"Notes/Межзёренное Расстояние.md","x":-440,"y":-640,"width":660,"height":680},
 		{"id":"f7326382b2e5e33d","type":"file","file":"Notes/OFF3D.md","x":-600,"y":1960,"width":760,"height":480},
@@ -17,10 +16,12 @@
 		{"id":"81b800808cdf0f1f","type":"file","file":"Notes/Идеи, которые надо добавить.md","x":5553,"y":-1239,"width":887,"height":799},
 		{"id":"85b311aca779aab3","type":"file","file":"Notes/Ansys-Composite-Solutions-Overview.pdf","subpath":"#page=10","x":3720,"y":94,"width":1340,"height":440},
 		{"id":"877ac05284d3f1a6","type":"file","file":"Notes/Моделирование Микроструктуры.md","x":3747,"y":-500,"width":643,"height":400},
-		{"id":"4f3bf8ee7be1d76f","type":"file","file":"Notes/Моделирование в Манипуле.md","x":3858,"y":-1320,"width":532,"height":619},
 		{"id":"a4d6de8ef2f453e0","type":"file","file":"Notes/Experiment - Cyclic Loading.md","x":5997,"y":314,"width":600,"height":680},
 		{"id":"88b064f0694ee645","type":"file","file":"Notes/Определение долговечности при испытаниях на усталость.md","x":6139,"y":1580,"width":603,"height":521},
-		{"id":"024db9f72a7f5d87","x":620,"y":-855,"width":581,"height":77,"type":"text","text":"# Как посчитать углы для 3D случая?"}
+		{"id":"024db9f72a7f5d87","type":"text","text":"# Как посчитать углы для 3D случая?","x":620,"y":-855,"width":581,"height":77},
+		{"id":"adc7911584527043","type":"file","file":"Notes/Команды Neper.md","x":-1720,"y":-1560,"width":674,"height":570},
+		{"id":"2b83a051ac0a3019","x":-2420,"y":-1480,"width":475,"height":448,"type":"link","url":"https://neper.info/doc/exprskeys.html#statistical-distributions"},
+		{"id":"4f3bf8ee7be1d76f","type":"file","file":"Notes/Моделирование в Манипуле.md","x":3860,"y":-1360,"width":532,"height":619}
 	],
 	"edges":[
 		{"id":"0b65a42303a45354","fromNode":"fda57375042bfab5","fromSide":"right","toNode":"c3e75e021bc90b54","toSide":"left"},
@@ -38,13 +39,14 @@
 		{"id":"0244e77ac1256874","fromNode":"85b311aca779aab3","fromSide":"bottom","toNode":"877ac05284d3f1a6","toSide":"top"},
 		{"id":"366141176fff185a","fromNode":"85b311aca779aab3","fromSide":"right","toNode":"81b800808cdf0f1f","toSide":"left"},
 		{"id":"8f7316b97214040f","fromNode":"4f3bf8ee7be1d76f","fromSide":"right","toNode":"81b800808cdf0f1f","toSide":"left"},
-		{"id":"15ee05cae92dc7e0","fromNode":"c3e75e021bc90b54","fromSide":"right","toNode":"e326abad1b11f101","toSide":"left"},
-		{"id":"5ebcc4f1f8a9d85a","fromNode":"c3e75e021bc90b54","fromSide":"right","toNode":"3b219770dff15e9f","toSide":"left"},
 		{"id":"fa411e4a8dfd950f","fromNode":"e326abad1b11f101","fromSide":"right","toNode":"85b311aca779aab3","toSide":"left"},
 		{"id":"d8e252542ecb771d","fromNode":"3b219770dff15e9f","fromSide":"right","toNode":"85b311aca779aab3","toSide":"left"},
 		{"id":"0bf5a232e9d34c12","fromNode":"3b219770dff15e9f","fromSide":"right","toNode":"4f3bf8ee7be1d76f","toSide":"left"},
 		{"id":"6cca1c240d03bb83","fromNode":"e326abad1b11f101","fromSide":"right","toNode":"4f3bf8ee7be1d76f","toSide":"left"},
 		{"id":"a4ae81e2d68ef898","fromNode":"a4d6de8ef2f453e0","fromSide":"top","toNode":"81b800808cdf0f1f","toSide":"bottom","label":"Сравнение"},
-		{"id":"99459bed2ed919b8","fromNode":"c3e75e021bc90b54","fromSide":"top","toNode":"024db9f72a7f5d87","toSide":"bottom"}
+		{"id":"99459bed2ed919b8","fromNode":"c3e75e021bc90b54","fromSide":"top","toNode":"024db9f72a7f5d87","toSide":"bottom"},
+		{"id":"3ddef7688217d6aa","fromNode":"6053eb636b0f48dd","fromSide":"top","toNode":"3b219770dff15e9f","toSide":"left"},
+		{"id":"f41355db0751d76b","fromNode":"6053eb636b0f48dd","fromSide":"top","toNode":"e326abad1b11f101","toSide":"left"},
+		{"id":"c8b857281b82323c","fromNode":"adc7911584527043","fromSide":"left","toNode":"2b83a051ac0a3019","toSide":"right"}
 	]
 }
