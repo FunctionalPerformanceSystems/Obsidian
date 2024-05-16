@@ -2,16 +2,15 @@
 	"nodes":[
 		{"id":"c3e75e021bc90b54","type":"file","file":"Notes/Алгоритмы Сглаживания.md","x":560,"y":-640,"width":700,"height":680},
 		{"id":"699901881ba10748","type":"file","file":"Notes/MicroStructPy - Microstructure Mesh Generation in Python.md","x":-1920,"y":300,"width":640,"height":560},
-		{"id":"d074eac96facbd85","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/foam.html","x":-810,"y":840,"width":690,"height":581},
+		{"id":"d074eac96facbd85","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/foam.html","x":-690,"y":880,"width":690,"height":581},
 		{"id":"4797bf2733727487","type":"link","url":"https://docs.microstructpy.org/en/latest/examples/package/from_image.html","x":-2219,"y":1151,"width":939,"height":689},
-		{"id":"426611dfa7c397f2","type":"file","file":"Notes/Алгоритм генерации зерна.md","x":-1434,"y":-640,"width":674,"height":680},
+		{"id":"426611dfa7c397f2","type":"file","file":"Notes/Алгоритм генерации зерна.md","x":-1534,"y":-640,"width":674,"height":680},
 		{"id":"fda57375042bfab5","type":"file","file":"Notes/Межзёренное Расстояние.md","x":-440,"y":-640,"width":660,"height":680},
 		{"id":"f7326382b2e5e33d","type":"file","file":"Notes/OFF3D.md","x":-600,"y":1960,"width":760,"height":480},
 		{"id":"34a9eb4a65e38252","type":"file","file":"Notes/Реализация на С++.md","x":-2380,"y":-590,"width":519,"height":580},
 		{"id":"cbee83ee337a62fd","type":"file","file":"Notes/PDF/VORO++.pdf","x":-3280,"y":-579,"width":596,"height":558},
 		{"id":"6053eb636b0f48dd","type":"file","file":"Notes/Сглаживание B-сплайном.md","x":1120,"y":180,"width":630,"height":709},
 		{"id":"60095b25c9759fed","type":"link","url":"https://demonstrations.wolfram.com/BSplineCurvesFromVoronoiPolygonVertices/#popup1","x":240,"y":1140,"width":540,"height":680},
-		{"id":"e326abad1b11f101","type":"file","file":"Notes/Mathematica - Экспорт в твердотельный формат.md","x":1920,"y":-1071,"width":612,"height":431},
 		{"id":"3b219770dff15e9f","type":"file","file":"Notes/Python IGES.md","x":1920,"y":-182,"width":612,"height":444},
 		{"id":"81b800808cdf0f1f","type":"file","file":"Notes/Идеи, которые надо добавить.md","x":5553,"y":-1239,"width":887,"height":799},
 		{"id":"85b311aca779aab3","type":"file","file":"Notes/Ansys-Composite-Solutions-Overview.pdf","subpath":"#page=10","x":3720,"y":94,"width":1340,"height":440},
@@ -19,9 +18,11 @@
 		{"id":"a4d6de8ef2f453e0","type":"file","file":"Notes/Experiment - Cyclic Loading.md","x":5997,"y":314,"width":600,"height":680},
 		{"id":"88b064f0694ee645","type":"file","file":"Notes/Определение долговечности при испытаниях на усталость.md","x":6139,"y":1580,"width":603,"height":521},
 		{"id":"024db9f72a7f5d87","type":"text","text":"# Как посчитать углы для 3D случая?","x":620,"y":-855,"width":581,"height":77},
-		{"id":"adc7911584527043","type":"file","file":"Notes/Команды Neper.md","x":-1720,"y":-1560,"width":674,"height":570},
-		{"id":"2b83a051ac0a3019","x":-2420,"y":-1480,"width":475,"height":448,"type":"link","url":"https://neper.info/doc/exprskeys.html#statistical-distributions"},
-		{"id":"4f3bf8ee7be1d76f","type":"file","file":"Notes/Моделирование в Манипуле.md","x":3860,"y":-1360,"width":532,"height":619}
+		{"id":"2b83a051ac0a3019","type":"link","url":"https://neper.info/doc/exprskeys.html#statistical-distributions","x":-2420,"y":-1480,"width":475,"height":448},
+		{"id":"4f3bf8ee7be1d76f","type":"file","file":"Notes/Моделирование в Манипуле.md","x":3860,"y":-1360,"width":532,"height":619},
+		{"id":"f55bc315f9d0d451","type":"file","file":"Notes/doc_2024-05-16_14-53-28.mp4","x":-800,"y":-1256,"width":425,"height":319},
+		{"id":"adc7911584527043","type":"file","file":"Notes/Команды Neper.md","x":-924,"y":-2160,"width":674,"height":570},
+		{"id":"e326abad1b11f101","type":"file","file":"Notes/Mathematica - Экспорт в твердотельный формат.md","x":1920,"y":-956,"width":612,"height":431}
 	],
 	"edges":[
 		{"id":"0b65a42303a45354","fromNode":"fda57375042bfab5","fromSide":"right","toNode":"c3e75e021bc90b54","toSide":"left"},
@@ -30,7 +31,6 @@
 		{"id":"45ec0034b8a87f34","fromNode":"699901881ba10748","fromSide":"right","toNode":"d074eac96facbd85","toSide":"left","label":"Другой способ создания\nмежзеренных расстояний"},
 		{"id":"5f4e05257335d167","fromNode":"699901881ba10748","fromSide":"bottom","toNode":"4797bf2733727487","toSide":"top"},
 		{"id":"36a5324aedf94bd2","fromNode":"c3e75e021bc90b54","fromSide":"bottom","toNode":"60095b25c9759fed","toSide":"top","label":"Сплайны"},
-		{"id":"0a866087249bb7b3","fromNode":"426611dfa7c397f2","fromSide":"top","toNode":"adc7911584527043","toSide":"bottom","label":"Neper"},
 		{"id":"ef258b528cad7638","fromNode":"4797bf2733727487","fromSide":"right","toNode":"f7326382b2e5e33d","toSide":"left","label":"Альтернатива для 3D изображений"},
 		{"id":"22ac094098c071ef","fromNode":"426611dfa7c397f2","fromSide":"left","toNode":"34a9eb4a65e38252","toSide":"right"},
 		{"id":"f25b6c88c0d24e71","fromNode":"34a9eb4a65e38252","fromSide":"left","toNode":"cbee83ee337a62fd","toSide":"right"},
@@ -47,6 +47,8 @@
 		{"id":"99459bed2ed919b8","fromNode":"c3e75e021bc90b54","fromSide":"top","toNode":"024db9f72a7f5d87","toSide":"bottom"},
 		{"id":"3ddef7688217d6aa","fromNode":"6053eb636b0f48dd","fromSide":"top","toNode":"3b219770dff15e9f","toSide":"left"},
 		{"id":"f41355db0751d76b","fromNode":"6053eb636b0f48dd","fromSide":"top","toNode":"e326abad1b11f101","toSide":"left"},
-		{"id":"c8b857281b82323c","fromNode":"adc7911584527043","fromSide":"left","toNode":"2b83a051ac0a3019","toSide":"right"}
+		{"id":"c8b857281b82323c","fromNode":"adc7911584527043","fromSide":"left","toNode":"2b83a051ac0a3019","toSide":"right"},
+		{"id":"fab24a22c276f45d","fromNode":"426611dfa7c397f2","fromSide":"top","toNode":"f55bc315f9d0d451","toSide":"bottom","label":"3D тесселяция Вороного"},
+		{"id":"3896d92e73ce0e41","fromNode":"f55bc315f9d0d451","fromSide":"top","toNode":"adc7911584527043","toSide":"bottom","label":"Neper"}
 	]
 }
